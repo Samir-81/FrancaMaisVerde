@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franca+Verde - Dias de Coleta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="dias-coleta-inline.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="importancia.html"><i class="fas fa-leaf"></i> Importância</a></li>
+                <li><a href="separar.html"><i class="fas fa-recycle"></i> Como Separar</a></li>
+                <li><a href="descarte-especial.html"><i class="fas fa-trash-alt"></i> Descarte Especial</a></li>
+                <li><a href="ecopontos.html"><i class="fas fa-map-marker-alt"></i> Ecopontos</a></li>
+                <li><a href="dias-coleta.html" class="active"><i class="fas fa-calendar-alt"></i> Dias de Coleta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="container">
+                <h2>Pesquisar Dias de Coleta por Bairro</h2>
+                <p>Encontre o dia e horário da coleta seletiva no seu bairro em Franca-SP.</p>
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="neighborhood-input" placeholder="Digite o nome do seu bairro" autocomplete="off">
+                        <button id="search-button">Buscar</button>
+                    </div>
+                    <div class="suggestions-list" id="suggestions-list"></div>
+                </div>
+                <div id="result-area" class="result-area">
+                    </div>
+                <div id="view-hide-buttons" style="text-align: center; margin-top: 20px;">
+                    <button id="view-all-button" class="secondary-button">Ver Todos os Bairros</button>
+                    <button id="hide-all-button" class="secondary-button" style="display: none;">Esconder Lista</button>
+                </div>
+                <div id="all-neighborhoods-list" class="result-area">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guia de Reciclagem para Franca-SP. Todos os direitos reservados.</p>
+        <p>Desenvolvido com o compromisso de promover a sustentabilidade em nossa cidade.</p>
+    </footer>
+
+    <button id="backToTopBtn" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+    <script src="dias-coleta-inline.js"></script>
+</body>
+</html>
